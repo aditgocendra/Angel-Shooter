@@ -2525,7 +2525,7 @@ input_2/name = "Jump"
 input_2/auto_advance = false
 
 [sub_resource type="AnimationNodeBlendTree" id=24]
-graph_offset = Vector2( -169, 77.5 )
+graph_offset = Vector2( -296.417, -174.417 )
 nodes/aim_down/node = SubResource( 35 )
 nodes/aim_down/position = Vector2( 40, 300 )
 nodes/aim_strafe/node = SubResource( 32 )
@@ -2680,7 +2680,7 @@ bones/24/enabled = true
 bones/24/bound_children = [  ]
 
 [node name="BoneAttachment" type="BoneAttachment" parent="Hero/Armature/Skeleton"]
-transform = Transform( 0.420257, -0.899346, 0.120672, -0.256642, 0.00974971, 0.966457, -0.870356, -0.43713, -0.226713, 0.511531, 0.76644, -1.02766 )
+transform = Transform( 0.419032, -0.900718, 0.114542, -0.263449, 0.000112474, 0.964673, -0.868911, -0.434405, -0.237247, 0.50715, 0.760571, -1.03351 )
 bone_name = "Hand.R"
 
 [node name="Weapon" type="MeshInstance" parent="Hero/Armature/Skeleton/BoneAttachment"]
@@ -2726,7 +2726,7 @@ margin = 0.02
 [node name="Camera" type="Camera" parent="CamRoot/SpringArm"]
 current = true
 fov = 65.0
-far = 200.0
+far = 150.0
 
 [node name="AimCast" type="RayCast" parent="CamRoot/SpringArm/Camera"]
 enabled = true
@@ -2755,10 +2755,10 @@ active = true
 process_mode = 0
 parameters/aim_strafe/blend_position = Vector2( 0, 0 )
 parameters/aim_up_down/add_amount = 0.0
-parameters/run/blend_position = Vector2( 0, 0 )
+parameters/run/blend_position = Vector2( 0, -0.0172414 )
 parameters/state/current = 0
 
 [node name="ShootTimer" type="Timer" parent="."]
-wait_time = 0.2
+wait_time = 0.1
 one_shot = true
 autostart = true

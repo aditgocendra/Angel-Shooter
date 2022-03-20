@@ -1,0 +1,22 @@
+[gd_resource type="Environment" load_steps=2 format=2]
+
+[sub_resource type="PanoramaSky" id=1]
+
+[resource]
+background_mode = 1
+background_sky = SubResource( 1 )
+ambient_light_color = Color( 0.854902, 0.870588, 0.815686, 1 )
+ambient_light_energy = 0.2
+fog_transmit_enabled = true
+fog_transmit_curve = 1.03526
+fog_height_enabled = true
+fog_height_min = 2.1
+fog_height_curve = 1.86607
+tonemap_mode = 2
+tonemap_white = 2.0
+auto_exposure_scale = 0.1
+ss_reflections_fade_out = 3.86374
+ss_reflections_depth_tolerance = 32.2
+glow_enabled = true
+glow_strength = 0.85
+glow_blend_mode = 1
